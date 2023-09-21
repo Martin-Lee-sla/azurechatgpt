@@ -44,6 +44,15 @@ jobs:
       - name: 📂 Copy features folder
         run: cp -R ./src/features ./site-deploy/features
         
+      - name: 📂 Copy components folder
+        run: cp -R ./src/components ./site-deploy/components
+      - name: 📂 Copy lib folder
+        run: cp -R ./src/lib ./site-deploy/lib
+      - name: 📂 Copy node folder
+        run: cp -R ./src/node_modules ./site-deploy/node_modules
+      - name: 📂 Copy pages folder
+        run: cp -R ./src/pages ./site-deploy/pages
+        
       - name: 📦 Package Next application
         run: |
           cd ./site-deploy
