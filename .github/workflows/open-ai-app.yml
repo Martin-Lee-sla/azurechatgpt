@@ -41,8 +41,8 @@ jobs:
       - name: 📂 Copy App folder
         run: cp -R ./src/app ./site-deploy/app
 
-      - name: 📂 Copy features folder
-        run: cp -R ./src/features ./site-deploy/features
+      #- name: 📂 Copy features folder
+      #  run: cp -R ./src/features ./site-deploy/features
         
       - name: 📂 Copy components folder
         run: cp -R ./src/components ./site-deploy/components
