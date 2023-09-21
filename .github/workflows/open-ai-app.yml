@@ -38,6 +38,9 @@ jobs:
       - name: 📂 Copy Public folder
         run: cp -R ./src/public ./site-deploy/public
 
+      - name: 📂 Copy App folder
+        run: cp -R ./src/app ./site-deploy/app
+
       - name: 📦 Package Next application
         run: |
           cd ./site-deploy
